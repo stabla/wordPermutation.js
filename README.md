@@ -12,6 +12,19 @@ We have 3 function:
   heapArr) and make a new posibilities. At the end, we have all posibilities into 'permutedArr'
   If the array 'myArray' contain a word, we call wordSplitter() to split the word into an array with letters. *heap()* need an array with letter to do his work !
 
+### Possibilities 
+*We'll not using factorial in this code, but it's cool to know how many possibilities there's without calculating all existing combination.*
+
+There existing 
+> n!
+possibilities, which is equivalent to 
+> 1 * 2 * 3 * . . . * ( n - 1 ) * n
+
+Clearly,
+> 4! = 4 * 3 * 2 * 1 =  24
+**It means**, when you have a word composed by 4 letters, you have 24 possibilities. Pretty astonishing when you see a word with 5 letters have 120 combination possible.
+
+
 ### Improvement ?
   Any advice to improve the code ? Pull a request, it only will be amazing !
   
