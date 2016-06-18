@@ -17,11 +17,15 @@ We have 3 function:
 
 There existing 
 > n!
+
 possibilities, which is equivalent to 
+
 > 1 * 2 * 3 * . . . * ( n - 1 ) * n
 
 Clearly,
+
 > 4! = 4 * 3 * 2 * 1 =  24
+
 **It means**, when you have a word composed by 4 letters, you have 24 possibilities. Pretty astonishing when you see a word with 5 letters have 120 combination possible.
 
 
