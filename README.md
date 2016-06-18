@@ -26,7 +26,7 @@ Clearly,
 
 > 4! = 4 * 3 * 2 * 1 =  24
 
-**It means**, when you have a word composed by 4 letters, you have 24 possibilities. Pretty astonishing when you see a word with 5 letters have 120 combination possible.
+**It means**, when you have a word composed by 4 letters, you have 24 possibilities. Pretty astonishing when you see a word with 5 letters have 120 combination possible. I let you imagine a word with much more letters... (or numbers)
 
 
 ### Improvement ?
