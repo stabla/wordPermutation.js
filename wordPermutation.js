@@ -31,6 +31,14 @@
             }
         }
 
+				function factorial(number) {
+    var rval=1;
+    for (var i = 2; i <= number; i++)
+        rval = rval * i;
+    return console.log(rval);
+        }
+        
+
         function wordSplitter(arr) {
             var arrSize = arr.toString().length;
             if (arrSize === 1) {
