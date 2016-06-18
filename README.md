@@ -28,7 +28,7 @@ Clearly,
 
 **It means**, when you have a word composed by 4 letters, you have 24 possibilities. Pretty astonishing when you see a word with 5 letters have 120 combination possible. I let you imagine a word with much more letters... (or numbers)
 
-Fun Fact ? Possibilities of your word will start with the same letter (or number) (n-1)! times. But it's only a conjecture from me, not verified !
+(**Fun Fact ?** : *Possibilities of your word will start with the same letter (or number) (n-1)! times. But it's only a conjecture from me, not verified !*)
 
 ### Improvement ?
   Any advice to improve the code ? Pull a request, it only will be amazing ! 
