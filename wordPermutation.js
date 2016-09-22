@@ -1,21 +1,19 @@
 // GitHub : @idkn
 // Function factorial isn't used, you can delete it
-// initalize you word into myArray, you can do ['no'] or ['n','o']. 
-var myArray = ['no'], myArraySize = myArray.length;
-        
-var splitWord = [],
+// initalize you word into myArray (e.g you can do ['no'] or ['n','o']). 
+var myArray = ['no'], 
+    myArraySize = myArray.length,
+    splitWord = [],
     heapArr = [],
     injectInArr = [],
     permutedArr = [];
 
         // Basic Heap's Algorithm.
-        function heap(int, arr) {
-            if (int == 1) {
-                for (var i = 0; i < arr.length; i++) {
-                    heapArr.push(arr[i]);
-                }
-            } else {
-                for (var i = 0; i < int - 1; i++) {
+        var heap = function (int, arr) {
+        if (int == 1) {
+                for (var i = 0; i < arr.length; i++) { heapArr.push(arr[i]); }
+        } else {
+          for (var i = 0; i < int - 1; i++) {
                     heap(int - 1, arr);
                     if (int % 2 == 0) {
                         var temp = arr[i];
@@ -31,29 +29,23 @@ var splitWord = [],
             }
         }
 
-	// Function for factorial, not used, you can delete it if you want really
-	function factorial(number) {
-    	 var rval=1;
-    	 	for (var i = 2; i <= number; i++) {
-        		rval = rval * i;
-    	 	}
-    	return console.log(rval);
+      	// Function for factorial, not used, you can delete it if you want really
+      	var factorial = function (number) {
+        for (var i = 2, rval = 1; i <= number; i++) { rval = rval * i; }
+          return console.log(rval);
         }
         
        // function to split a word if it's it a word, if isn't, function won't be used.
-        function wordSplitter(arr) {
+        var wordSplitter = function (arr) {
             var arrSize = arr.toString().length;
-            if (arrSize === 1) {
-                return arr;
-            } else {
-                for (var i = 0; i < arrSize; i++) {
-                    splitWord[i] = arr.toString().charAt(i);
-                }
+            if (arrSize === 1) { return arr; } 
+            else {
+                for (var i = 0; i < arrSize; i++) { splitWord[i] = arr.toString().charAt(i); }
                 return splitWord;
             }
         }
 
-        function permute(myArraySize, arr) {
+        var permute = function (myArraySize, arr) {
             // check if we have a starting array with a word or if it's multiple letter. If it's a word, we will transform it into an array with multiple letter. 
             if (myArraySize === 1) {
                 wordSplitter(arr);
@@ -80,6 +72,6 @@ var splitWord = [],
             }
             return permutedArr;
         }
-
+        
 permute(myArraySize, myArray);
 console.log(permutedArr);
