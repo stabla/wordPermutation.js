@@ -1,4 +1,4 @@
-// GitHub : @idkn
+// GitHub : @stabla
 // Function factorial isn't used, you can delete it
 // initalize you word into myArray (e.g you can do ['no'] or ['n','o']). 
 var myArray = ['no'], 
